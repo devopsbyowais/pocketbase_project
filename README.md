@@ -30,6 +30,36 @@ This project sets up [PocketBase](https://pocketbase.io/) with a full CI/CD pipe
 - Prometheus & Grafana images
 
 ---
+### 🚀 Run Minikube
+
+
+<minikube start>
+
+---
+
+📦 Deploy PocketBase + Monitoring
+
+<ansible-playbook -i ansible/inventory.ini deploy/deploy.yml>
+
+This will:
+
+Deploy PocketBase in Kubernetes
+Deploy Prometheus and Grafana for monitoring
+Expose Grafana on http://localhost:3000
+Expose Prometheus on http://localhost:9090
+
+---
+
+📈 Grafana Dashboard
+You can import custom dashboards for PocketBase metrics via Prometheus.
+
+---
+
+🔐 First-Time Admin Setup
+
+When you first visit the PocketBase instance, you'll be asked to create the admin account.
+
+---
 
 ## Structure
 
